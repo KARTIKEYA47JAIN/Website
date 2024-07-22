@@ -1,0 +1,2464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links li 
+  {
+    float: left;
+  }
+  
+  .nav-links li a {
+    display: block;
+    color: rgb(47, 39, 145);
+    text-align: center;
+    padding: 1vh 1.5vh;
+    margin-top: 2vh;
+    text-decoration: none;
+  }
+  
+  .logo 
+  {
+
+    max-width: 100%;
+    height: auto;
+    margin-top: -1.2vh;
+  }
+
+
+
+
+/* LANDING PAGE */
+
+/* Left Column */
+.landing-container 
+{
+  margin: 4vh auto;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  width: 90%;
+  height: 50vh; /* Adjust the height as needed */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.6vh;
+  display: flex; /* Use flexbox to create columns */
+  border-radius: 1vh;
+}
+
+.landing-box {
+  flex: 1; /* Take up half of the container */
+  padding: 2vh;
+}
+
+.landing-left-column 
+{
+  flex: 1;
+  padding: 2vh;
+  margin-left: 6vh;
+}
+
+.landing-title 
+{
+  margin-top: 1vh;
+  margin-left: 4vh;
+  font-size: 3vh;
+  margin-bottom: 1vh;
+  color: #696969;
+}
+
+.landing-subtitle {
+  font-size: 4vh;
+  margin-left: 4vh;
+  margin-bottom: 2vh;
+  color: #2F2791;
+}
+
+.landing-features {
+  text-align: left;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+  list-style-type: none;
+  margin-left: 4vh;
+  padding: 0;
+  color: #444444;
+}
+
+.landing-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.landing-bullet {
+  width: 2vh;
+  height: 2vh;
+  background-color: #E1FFEB;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vh;
+}
+
+.landing-tick {
+  color: #00822B;
+}
+
+.landing-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1vh;
+}
+
+.landing-btn-1 {
+  margin-left: -18vh;
+  background-color: #FF5C00;
+  color: #FFFFFF;
+  border: none;
+  padding: 1vh 2vh;
+  border-radius: 1.2vh;
+  font-size: 1.8vh;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
+}
+
+.landing-btn-2 {
+  background-color: #FFFFFF;
+  color: #FF5C00;
+  border: 0.2vh solid #FF5C00;
+  padding: 1vh 2vh;
+  border-radius: 1.2vh;
+  font-size: 1.8vh;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
+}
+
+.landing-btn-1:hover,
+.landing-btn-2:hover {
+  transform: translateY(-0.2vh);
+  box-shadow: 0px 0.6vh 0.8vh rgba(0, 0, 0, 0.2);
+}
+
+/* Right Column */
+.landing-right-column 
+{
+  width: 90vh;
+  height: 50vh; /* Adjust the height as needed */
+  background-color: white;
+  margin-left: 6vh;
+  margin-top: -1.5vh;
+  position: relative;
+  z-index: 1;
+}
+
+.landing-box-1 {
+  margin-top: 9vh;
+  width: 28vh;
+  height: 32vh;
+  margin-left: 28vh;
+  background-color: #D9D9D9;
+  border-radius: 2vh;
+  border-width: 1.6vh;
+  border-color: rgba(207, 219, 255, 1); /* Border color with 50% transparency */
+  border-style: solid; /* Border style */
+  z-index: 1;
+  background-image: url('/Landing_Page_Images/Im_3.png');
+  background-size: 100%;
+}
+
+
+.landing-dotted-box-1 
+{
+  position: absolute;
+  background-color: transparent;
+  margin-top: -16vh;
+  border: 1vh dotted #CFDBFF; /* Adjust the dotted line properties */
+  border-radius: 4vh;
+  overflow: hidden; /* Hide overflowing content */
+  left: 20vh; /* Adjust as needed */
+  width: 40vh; /* Changed to vh for better responsiveness */
+  height: 20vh; /* Changed to vh for better responsiveness */
+  z-index: -1; /* Ensure it's behind other elements */
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%); /* Exclude top-right portion */
+}
+
+.landing-dotted-box-2
+{
+  position: absolute;
+  background-color: transparent;
+  margin-top: -36vh;
+  border: 1vh dotted #CFDBFF; /* Adjust the dotted line properties */
+  border-radius: 4vh;
+  overflow: hidden; /* Hide overflowing content */
+  left: 26vh; /* Adjust as needed */
+  width: 38vh; /* Changed to vh for better responsiveness */
+  height: 36vh; /* Changed to vh for better responsiveness */
+  z-index: -1; /* Ensure it's behind other elements */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 0); /* Exclude top-right portion */
+}
+
+.landing-circle1,
+.landing-circle2 {
+  position: absolute;
+  background-color: none;
+  border-radius: 50vh;
+  background-size: cover; /* Scale the background image to cover the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  z-index: 1;
+}
+
+.landing-circle1::after
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14vh;
+  height: 14vh;
+  border-radius: 60%;
+  border: 2px solid rgba(255, 120, 0, -0.1); /* Adjust the alpha value (0.1) for very high transparency */
+  box-sizing: border-box;
+}
+
+.landing-circle2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16vh;
+  height: 16vh;
+  border-radius: 60%;
+  border: 2px solid rgba(255, 120, 0, -0.1); /* Adjust the alpha value (0.1) for very high transparency */
+  box-sizing: border-box;
+}
+
+
+.landing-circle1 {
+  width: 160px;
+  height: 160px;
+  top: 12vh;
+  left: 8vh;
+  transform: translate(50%, -50%);
+  background-image: url('Landing_Page_Images/Im_2.png');
+  background-size: 90%;
+}
+
+.landing-circle2 {
+  width: 183px;
+  height: 183px;
+  top: 16vh;
+  left: 56vh;
+  transform: translate(-50%, 50%);
+  background-image: url('Landing_Page_Images/Im_1.png');
+  background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.container_1 {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #2F2791, #584BF0);
+  padding: 0.2vh;
+  border-radius: 0.8vh;
+  color: white;
+}
+
+.column_1 {
+  flex: 1;
+  display: flex; /* Changed display to flex */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 1.5vh;
+  position: relative;
+  text-align: center; /* Center text horizontally */
+}
+
+.column_1:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 7vh;
+  width: 0.1vh;
+  background-color: white;
+}
+
+.heading_1 {
+  font-size: 2.8vh;
+  margin-bottom: 0.5vh;
+}
+
+.text_1 {
+  font-size: 1.4vh;
+  line-height: 1.2;
+  margin-top: 0.5vh;
+}
+
+/* Heading: Learn and Unlock Any Skill You Want */
+.heading_container {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 6vh;
+}
+
+.main_heading {
+  font-size: 3.2vh;
+  color: #070055;
+  margin-bottom: 2vh;
+}
+
+.subline {
+  font-size: 1.8vh;
+  color: #696969;
+  line-height: 1;
+}
+
+/* CARD: Advance Searching */
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: -1.2vh;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh;
+}
+
+.card-section_margin 
+{
+  margin: 4vh auto;
+  margin-top: 6vh;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  width: 40vh;
+  height: 20vh;
+  box-shadow: 0 0.4vh 0.8vh 0 rgba(0, 0, 0, 0.1);
+  padding: 1.6vh;
+  text-align: left;
+  background-color: white;
+  border-radius: 1.2vh;
+}
+
+.card-section_margin:not(:last-child) {
+  margin-right: 0.8vh;
+}
+
+.card-icon {
+  margin-bottom: 1vh;
+  margin-top: 1.5vh;
+  margin-left: 0.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2F2691;
+  border-radius: 20%;
+  width: 2.6vh;
+  height: 3vh;
+  color: white;
+  font-size: 2.4vh;
+  margin-right: 1vh;
+}
+
+.card-heading {
+  font-weight: bold;
+  font-size: 2vh;
+  margin-left: 0.4vh;
+  color: #070055;
+  margin-bottom: 0.5vh;
+  margin-top: 1vh;
+}
+
+.card-subheading {
+  font-size: 1.4vh;
+  margin-left: 0.4vh;
+  color: #666;
+  margin-top: 0.5vh;
+}
+
+/* BUTTON */
+.button-container {
+  text-align: center;
+}
+
+.install-button {
+  background-color: #FF5C00;
+  color: #FFFFFF;
+  border: none;
+  padding: 1.8vh 2.8vh;
+  border-radius: 1.2vh;
+  font-size: 1.8vh;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
+  width: 19.3vh;
+  height: 5.2vh;
+  margin-bottom: 10vh;
+}
+
+.install-button:hover {
+  transform: translateY(-0.2vh);
+  box-shadow: 0px 0.6vh 0.8vh rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/* CARD: How Ctutor Works */
+.heading_container_1 
+{
+  text-align: center;
+  margin-top: 8vh; /* Increased margin for better spacing using vh */
+  margin-left: 4vh;
+}
+
+.box-container 
+{
+  position: relative;
+  background-color: #F7F9FF;
+  margin-left: 12vh; /* Changed to vh for better responsiveness */
+  margin-right: 0.4vh; /* Changed to vh for better responsiveness */
+  width: 153vh; /* Changed to vh for better responsiveness */
+  height: 62.5vh; /* Changed to vh for better responsiveness */
+  padding: 2vh; /* Changed to vh for better responsiveness */
+}
+
+.card-section-works {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20vh; /* Changed to vh for better responsiveness */
+}
+
+/* INDIVIDUAL CARD STYLES */
+.card-works {
+  width: calc((100% - 8vh) / 4); /* Adjusted width for 4 cards with space between them using vh */
+  height: 21.6vh; /* Changed to vh for better responsiveness */
+  background-color: white;
+  box-shadow: 0 0.2vh 0.4vh 0 rgba(0, 0, 0, 0.1); /* Changed to vh for better responsiveness */
+  padding: 2vh; /* Changed to vh for better responsiveness */
+  text-align: left;
+  border-radius: 1.2vh; /* Changed to vh for better responsiveness */
+  position: relative;
+}
+
+/* Margin between individual cards */
+.card-works:not(:last-child) {
+  margin-right: 2vh; /* Changed to vh for better responsiveness */
+}
+
+/* CARD HEADING STYLES */
+.card-heading-works {
+  font-weight: bold;
+  color: #070055;
+  margin-bottom: 0.5vh; /* Changed to vh for better responsiveness */
+}
+
+/* CARD SUBHEADING STYLES */
+.card-subheading-works {
+  font-size: 1.6vh; /* Changed to vh for better responsiveness */
+  color: #666;
+  text-align: center;
+  margin-top: 10vh; /* Changed to vh for better responsiveness */
+  justify-content: center;
+}
+
+/* IMAGE CARD */
+.image-works {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  z-index: 1;
+  max-width: none;
+  max-height: none;
+}
+
+/* DOT STYLES */
+.dot {
+  position: absolute;
+  top: -4vh; /* Adjust dot position above the card using vh */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.8vh; /* Changed to vh for better responsiveness */
+  height: 0.8vh; /* Changed to vh for better responsiveness */
+  background-color: #2F2691;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Highlighting circle behind the dot */
+.dot-highlight {
+  position: absolute;
+  top: -4.4vh; /* Adjust highlight position to be slightly larger than dot using vh */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.6vh; /* Changed to vh for better responsiveness */
+  height: 1.6vh; /* Changed to vh for better responsiveness */
+  background-color: #DEE3F8;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* DOT NUMBERING STYLES */
+.dot-number {
+  position: absolute;
+  top: -7.5vh; /* Adjust numbering position above the card using vh */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4vh; /* Changed to vh for better responsiveness */
+  color: #696969;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* DOTTED LINE STYLES */
+.dotted-line {
+  position: absolute;
+  top: 29.5vh; /* Adjust line position above the dots using vh */
+  left: calc(12.3% + 0.6vh); /* Position line to the right edge of dot 1 using vh */
+  width: calc(100% - 2 * ((100% - 8vh) / 4 + 2vh) + 35.2vh); /* Calculate width based on card width and margin using vh */
+  height: 0.2vh; /* Changed to vh for better responsiveness */
+  background-color: transparent;
+  border-bottom: 0.2vh dotted #2F2691; /* Changed to vh for better responsiveness */
+  z-index: 0;
+}
+
+/* Hide the last line */
+.card-works:last-child .dotted-line {
+  display: none;
+}
+
+
+
+/* Are You Ready To Start Learning - LEFT COLUMN*/
+
+.container_2 
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 12vh;
+  margin-left: 4vh;
+}
+
+.learning-row 
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.learning-left-column 
+{
+  flex: 1;
+  padding: 2vh;
+  margin-left: 6vh;
+}
+
+.learning-left-column h2 {
+  font-size: 6vh;
+  color: #070055;
+  margin-bottom: 1vh;
+  word-spacing: 0.8vh;
+}
+
+.learning-left-column p {
+  font-size: 1.4vh;
+  color: #696969;
+  margin-bottom: 2vh;
+}
+
+.learning-left-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.learning-left-column li {
+  font-size: 1.6vh;
+  color: #262626;
+  position: relative; /* Add relative positioning to the list item */
+  margin-left: 6vh; /* Add some margin to align text with the logo */
+  margin-bottom: 3.5vh; /* Add margin bottom to create gap between points */
+}
+
+.learning-left-column .fas.fa-book {
+  position: absolute; /* Position the book icon absolutely */
+  left: -6vh; /* Position the icon to the left of the text */
+  top: 50%; /* Center the icon vertically */
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: white; /* Set the color of the book icon to white */
+  background-color: #2F2691; /* Set the background color of the book icon */
+  padding: 1vh;
+  border-radius: 50%;
+  border: 0.2vh solid black; /* Add black border to the book icon */
+}
+
+.learning-left-column .fas.fa-book::before {
+  content: none; /* Remove the default content (black dot) of the book icon */
+}
+
+.learning-left-column .fas.fa-book::after {
+  content: "\f02d"; /* Set the content to the book icon */
+  font-family: "FontAwesome"; /* Set the font family for the book icon */
+}
+
+/* Are You Ready To Start Learning - RIGHT COLUMN*/
+
+.Image {
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: auto; /* Center the image both horizontally and vertically */
+  max-width: none; /* Remove the maximum width */
+  max-height: none; /* Remove the maximum height */
+  position: relative; /* Enable positioning */
+  transform: translateX(-6vh) translateY(-22.4vh); /* Adjust the vertical positioning */
+}
+
+
+.learning-right-column {
+  width: 47.6vh; /* Changed to vh for better responsiveness */
+  height: 28.1vh; /* Changed to vh for better responsiveness */
+  background-color: #F7F9FF;
+  margin-right: 20vh; /* Changed to vh for better responsiveness */
+  margin-top: 12.2vh; /* Changed to vh for better responsiveness */
+  position: relative;
+  z-index: 1;
+}
+
+.dotted-box1,
+.dotted-box2 {
+  position: absolute;
+  background-color: transparent;
+  border: 0.5vh dotted #CFDBFF;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.dotted-box1 {
+  width: 20vh; /* Changed to vh for better responsiveness */
+  height: 39.4vh; /* Changed to vh for better responsiveness */
+  top: -40%;
+  left: -8vh; /* Changed to vh for better responsiveness */
+  clip-path: polygon(0 0, 100% 0, 100% 8%, 0 100%); /* Adjusted clip-path to hide right and bottom parts */
+
+}
+
+.dotted-box2 {
+  width: 32.3vh; /* Changed to vh for better responsiveness */
+  height: 22.9vh; /* Changed to vh for better responsiveness */
+  bottom: 2.5vh; /* Changed to vh for better responsiveness */
+  top: 10vh; /* Changed to vh for better responsiveness */
+  left: 18vh; /* Changed to vh for better responsiveness */
+  clip-path: polygon(5.4% 6%, 100% 1.2%, 100% 100%, 0 100%);
+}
+
+.circle1,
+.circle2 {
+  position: absolute;
+  background-color: #CFDBFF;
+  border-radius: 50%;
+  background-size: cover; /* Scale the background image to cover the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.circle1 
+{
+  width: 190px;
+  height: 190px;
+  top: 105%;
+  left: -5%;
+  background-color: #FF5C00;
+  transform: translate(-50%, -50%);
+  background-image: url('Landing_Page_Images/Im_8.png');
+}
+
+.circle2 
+{
+  width: 153px;
+  height: 153px;
+  top: -10%;
+  left: 86%;
+  background-color: #2F2791;
+  transform: translate(-50%, -50%);
+  background-image: url('Landing_Page_Images/Im_10.png');
+}
+
+
+
+/* Testimonials */
+
+/* Testimonials */
+
+.container_3 {
+  background-color: white;
+  margin: 4vh auto 4vh 10vh;
+  width: 163vh; 
+  height: auto;
+  padding: 1.4vh;
+  display: flex;
+  border-radius: 1vh;
+}
+
+.card_testimonial {
+  background-color: #F7F9FF;
+  width: 37vh;
+  height: auto; /* Adjust height to fit content */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5vh 1.5vh; 
+  margin: 1.5vh; /* Margin between cards */
+  transition: transform 400ms;
+}
+
+.testimonials_text {
+  font-size: 1.4vh;
+  color: #191919;
+  margin-top: 1vh;
+  text-align: justify;
+  width: 100%; /* Ensure text takes full width */
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 1vh;
+  margin-left: -18vw;
+}
+
+.star-rating span {
+  margin: 0 0.4vh;
+  color: #FFD700;
+}
+
+.container_at {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.avatar-container {
+  flex: 0 0 auto;
+  margin-right: 2vh;
+  margin-left: -4vw;
+}
+
+.avatar {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.4vh;
+  color: #070055;
+  margin-bottom: 0.5vh;
+}
+
+.title {
+  font-size: 1.4vh;
+  color: #696969;
+}
+
+.swiper {
+  width: 160vh;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  padding-right: 5vh;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -1vh;
+}
+
+.swiper-button {
+  position: absolute;
+  bottom: 2.5vh;
+  z-index: 1;
+}
+
+.swiper-button-next {
+  right: 2.5vh;
+}
+
+.swiper-button-prev {
+  right: 7vh;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: none;
+}
+
+
+
+
+@media (max-height: 400px) {
+    .name, .title {
+        font-size: 1.2vh;
+    }
+
+    .avatar {
+        width: 5vh;
+        height: 5vh;
+    }
+}
+
+
+
+/* ENDING */
+
+.outer-box 
+{
+  margin-left: 4vh;
+  border: 0.4vh dotted #DEE3F8; /* Dotted box with color DEE3F8 */
+  padding: 1.8vh; /* Gap between dotted box and inner box */
+  position: relative; /* Positioning for image overlay */
+  width: 40vh;
+  height: 43.2vh;
+  border-radius: 8vh; /* Increase the border-radius for a more rounded appearance */
+}
+
+.inner-box 
+{
+  width: 17.8vh; /* Changed to vh */
+  height: 19.6vh; /* Changed to vh */
+  float: left;
+  box-sizing: border-box;
+}
+
+.top-left {
+  background-color: #FF5C00; 
+  border-radius: 50% 0 50% 0; 
+
+}
+
+.top-right {
+  background-color: #2F2791;
+  border-radius: 0 50% 0 50%; 
+}
+
+.bottom-left {
+  background-color: #2F2791;
+  border-radius: 0 50% 0 50%;
+}
+
+.bottom-right {
+  background-color: #FF5C00; 
+  border-radius: 50% 0 50% 0; 
+}
+
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Place the image above other content */
+  transform: translateX(-1.4vh) translateY(4.2vh);
+  max-width: none; /* Remove the maximum width */
+  max-height: none; /* Remove the maximum height */
+}
+
+
+
+
+
+
+
+
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+  .landing-container {
+      flex-direction: column;
+  }
+  
+  .landing-box {
+      padding: 10px;
+  }
+
+  .container_1 {
+      flex-direction: column;
+  }
+
+  .column_1:not(:last-child)::after {
+      display: none;
+  }
+
+  .card-section_margin {
+      width: 100%;
+      margin: 4% auto;
+  }
+
+  .card-section_margin:not(:last-child) {
+      margin-right: 0;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+  .nav-links {
+      overflow: auto;
+  }
+
+  .nav-links li {
+      float: none;
+      width: 100%;
+  }
+
+  .nav-links li a {
+      display: block;
+      text-align: center;
+  }
+
+  .landing-container {
+      margin-top: 10%;
+  }
+
+  .landing-title {
+      font-size: 12px;
+  }
+
+  .landing-subtitle {
+      font-size: 18px;
+  }
+
+  .landing-btn-1,
+  .landing-btn-2 {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+
+  .container_1 {
+      padding: 10px;
+  }
+
+  .heading_1 {
+      font-size: 24px;
+  }
+
+  .text_1 {
+      font-size: 12px;
+  }
+
+  .card-section_margin {
+      width: 90%;
+  }
+
+  .card-heading,
+  .card-subheading {
+      font-size: 12px;
+  }
+
+  .install-button {
+      padding: 12px 24px;
+      font-size: 16px;
+  }
+
+  .heading_container_1 {
+      margin-top: 60px;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+
+
+
+
+
+
+
+
+/* Tutor Page Want to become a Tutor */
+
+.background_wrapper {
+  background-color: #DEE3F8;
+  padding-top: 20px; /* Adjust as needed */
+  padding-bottom: 20px; /* Adjust as needed */
+}
+
+.tutor_container 
+{
+  background-color: white;
+  margin: 4vh auto;
+  margin-top: 6vh;
+  margin-left: 12vh;
+  margin-bottom: 12vh;
+  width: 153vh; /* Changed to vh for better responsiveness */
+  height: 40vh; /* Changed to vh for better responsiveness */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.6vh;
+  display: flex; /* Use flexbox to create columns */
+  border-radius: 1vh;
+}
+
+.tutor_box {
+  flex: 1; /* Take up half of the container */
+  padding: 2vh;
+}
+
+.tutor_title {
+  margin-top: 5vh;
+  font-size: 3vh;
+  margin-left: 10vh;
+  margin-bottom: 1vh;
+  color: #696969;
+}
+
+.tutor_subtitle {
+  margin-top: 1vh;
+  font-size: 6vh;
+  margin-left: 10vh;
+  text-align: left;
+  margin-bottom: 2vh;
+  color: #2F2791;
+}
+
+.tutor_actions {
+  display: flex;
+  justify-content: center;
+  margin-left: -12vh;
+  gap: 1vh;
+}
+
+.tutor_btn-1 {
+  background-color: #FF5C00;
+  color: #FFFFFF;
+  border: none;
+  padding: 1.8vh 2.8vh;
+  border-radius: 1.2vh;
+  font-size: 1.8vh;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
+  width: 19.3vh;
+  height: 5.2vh;
+  margin-bottom: 12vh;
+}
+
+.tutor_btn-2 {
+  background-color: #FFFFFF;
+  color: #FF5C00;
+  border: 0.2vh solid #FF5C00;
+  padding: 1.8vh 2.8vh;
+  border-radius: 1.2vh;
+  font-size: 1.8vh;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
+  width: 19.3vh;
+  height: 5.2vh;
+  margin-bottom: 10vh;
+}
+
+.tutor_btn-1:hover,
+.tutor_btn-2:hover {
+  transform: translateY(-0.2vh);
+  box-shadow: 0px 0.6vh 0.8vh rgba(0, 0, 0, 0.2);
+}
+
+
+/* Genuine Customers - LEFT COLUMN*/
+
+.genuine_box-container 
+{
+  position: relative;
+  background-color: #F7F9FF;
+  margin-left: 12vh; /* Changed to vh for better responsiveness */
+  margin-right: 0.4vh; /* Changed to vh for better responsiveness */
+  width: 153vh; /* Changed to vh for better responsiveness */
+  height: 56vh; /* Changed to vh for better responsiveness */
+  padding: 2vh; /* Changed to vh for better responsiveness */
+}
+
+.genuine-row 
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.genuine-left-column 
+{
+  flex: 1;
+  padding: 2vh;
+  margin-left: 6vh;
+}
+
+.genuine-left-column h2 {
+  font-size: 4vh;
+  color: #070055;
+  margin-bottom: 1vh;
+  margin-top: -1vh;
+  margin-left: 4.5vh;
+}
+
+.genuine-left-column p {
+  font-size: 1.4vh;
+  color: #696969;
+  margin-bottom: 3vh;
+  margin-left: 4.5vh;
+}
+
+.genuine-left-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.genuine-left-column li {
+  font-size: 2vh;
+  color: #262626;
+  position: relative; /* Add relative positioning to the list item */
+  margin-left: 10vh; /* Add some margin to align text with the logo */
+  margin-bottom: 3.5vh; /* Add margin bottom to create gap between points */
+}
+
+.genuine-left-column .fas.fa-book {
+  position: absolute; /* Position the book icon absolutely */
+  left: -6vh; /* Position the icon to the left of the text */
+  top: 50%; /* Center the icon vertically */
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: white; /* Set the color of the book icon to white */
+  background-color: #2F2691; /* Set the background color of the book icon */
+  padding: 1vh;
+  border-radius: 50%;
+  border: 0.2vh solid black; /* Add black border to the book icon */
+}
+
+.genuine-left-column .fas.fa-book::before {
+  content: none; /* Remove the default content (black dot) of the book icon */
+}
+
+.genuine-left-column .fas.fa-book::after {
+  content: "\f02d"; /* Set the content to the book icon */
+  font-family: "FontAwesome"; /* Set the font family for the book icon */
+}
+
+/* Genuine Customers - RIGHT COLUMN*/
+
+.genuine-right-column {
+  width: 40vh; /* Changed to vh for better responsiveness */
+  height: 28.1vh; /* Changed to vh for better responsiveness */
+  background-color: #F7F9FF;
+  margin-right: 8vh; /* Changed to vh for better responsiveness */
+  margin-top: 8vh; /* Changed to vh for better responsiveness */
+  position: relative;
+  z-index: 1;
+}
+
+/* Image */
+
+.genuine_outer-box {
+  border: 0.4vh dotted #DEE3F8; /* Dotted box with color DEE3F8 */
+  padding: 2vh; /* Gap between dotted box and inner box */
+  position: relative; /* Positioning for image overlay */
+  width: 34vh;
+  height: 32vh;
+  border-radius: 8vh; /* Increase the border-radius for a more rounded appearance */
+}
+
+
+.genuine_inner-box 
+{
+  width: 14vh; /* Changed to vh */
+  height: 14vh; /* Changed to vh */
+  float: left;
+  box-sizing: border-box;
+}
+
+.genuine_top-left {
+  background-color: #FF5C00; 
+  border-radius: 60% 0 60% 0; 
+
+}
+
+.genuine_top-right {
+  background-color: #2F2791;
+  border-radius: 0 60% 0 60%; 
+}
+
+.genuine_bottom-left {
+  background-color: #2F2791;
+  border-radius: 0 60% 0 60%;
+}
+
+.genuine_bottom-right {
+  background-color: #FF5C00; 
+  border-radius: 60% 0 60% 0; 
+}
+
+
+.genuine_image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Place the image above other content */
+  width: 40%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  transform: translateX(-0.4vh) translateY(2.3vh);
+  max-width: none; /* Remove the maximum width */
+  max-height: none; /* Remove the maximum height */
+}
+
+/* Tutor Card*/
+.tutor_heading_container 
+{
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 6vh;
+}
+.tutor_main_heading {
+  font-size: 3.2vh;
+  color: #070055;
+  margin-bottom: 2vh;
+}
+.tutor_subline {
+  font-size: 1.8vh;
+  color: #696969;
+  line-height: 1;
+  margin-bottom: -8vh;
+}
+/* CARD: Advance Searching */
+.tutor_logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: -1.2vh;
+}
+
+.tutor_card-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+}
+
+.tutor_card-section_margin {
+  margin: 2vw 3vw 6vh 6vw; /* Adjusted margins */
+  width: 30vw;
+  height: 14vh;
+  box-shadow: 0 0.4vh 0.8vh 0 rgba(0, 0, 0, 0.1);
+  padding: 1vw;
+  text-align: left;
+  background-color: white;
+  border-radius: 1.2vh;
+}
+
+.tutor_card-section_margin:not(:last-child) {
+  margin-right: 3vw;
+}
+
+.tutor_card-icon {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  margin-left: 0.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2F2691;
+  border-radius: 20%;
+  width: 2.6vh;
+  height: 2.8vh;
+  color: white;
+  font-size: 2.4vh;
+  margin-right: 1vh;
+}
+
+.tutor_card-heading {
+  font-weight: bold;
+  margin-left: 0.4vh;
+  color: #070055;
+  margin-bottom: 0.5vh;
+}
+
+.tutor_card-subheading {
+  font-size: 1.4vh;
+  margin-left: 0.4vh;
+  color: #666;
+  margin-top: 0.5vh;
+}
+
+/* BUTTON */
+.tutor_button-container {
+  text-align: center;
+}
+
+.tutor_install-button {
+  background-color: #FF5C00;
+  color: #FFFFFF;
+  border: none;
+  padding: 1.8vh 2.8vh;
+  border-radius: 1.2vh;
+  font-size: 1.8vh;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
+  width: 19.3vh;
+  height: 5.2vh;
+  margin-bottom: -1vh;
+}
+
+.tutor_install-button:hover {
+  transform: translateY(-0.2vh);
+  box-shadow: 0px 0.6vh 0.8vh rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Tutor*/
+
+.tutor_container_2
+{
+  background-color: white;
+  margin: 4vh auto;
+  margin-top: 6vh;
+  margin-left: -2vh;
+  margin-bottom: 4vh;
+  width: 153vh; /* Changed to vh for better responsiveness */
+  height: 40vh; /* Changed to vh for better responsiveness */
+  padding: 1.6vh;
+  display: flex; /* Use flexbox to create columns */
+  border-radius: 1vh;
+}
+
+
+/* ABOUT US*/
+
+/* Landing Image */
+.about_container {
+  width: 100vw; /* Full width of the viewport */
+  height: 50vh; /* Half of the viewport height */
+  display: flex;
+  border-radius: 1vh;
+  position: relative;
+}
+
+.about_avatar {
+  width: 100%; /* Make the image fill the container horizontally */
+  height: 100%; /* Make the image fill the container vertically */
+  object-fit: cover; /* Scale the image while maintaining aspect ratio */
+  border-radius: 1vh;
+}
+
+.about_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the overlay fill the container horizontally */
+  height: 100%; /* Make the overlay fill the container vertically */
+  background-color: rgba(0, 0, 0, 0.35); /* Black with 35% opacity */
+}
+
+.about_text {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the text precisely */
+  color: white;
+  font-size: 4vw;
+  text-align: center;
+}
+
+/* Trusted Partner */
+
+.about_box-container 
+{
+  position: relative;
+  background-color: #F7F9FF;
+  margin-top: -10vh;
+  border-radius: 2vh;
+  margin-left: 20vh; /* Changed to vh for better responsiveness */
+  margin-right: 0.4vw; /* Changed to vh for better responsiveness */
+  width: 80vw; /* Changed to vh for better responsiveness */
+  height: 90vh; /* Changed to vh for better responsiveness */
+  padding: 2vh; /* Changed to vh for better responsiveness */
+}
+
+.about-row 
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.about-left-column 
+{
+  flex: 1;
+  padding: 2vh;
+  margin-right: 8vw;
+}
+
+.about-left-column h2 {
+  font-size: 2vw;
+  color: #070055;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+  margin-left: 1vh;
+}
+
+.about-left-column p 
+{
+  margin-top: 2vh;
+  line-height: 3vh;
+  font-size: 1vw;
+  color: #696969;
+  margin-left: 1vh;
+}
+
+/* Partners - RIGHT COLUMN*/
+
+.about-right-column 
+{
+  width: 4vw; /* Changed to vw for better responsiveness */
+  height: 20vh; /* Adjusted for better responsiveness */
+  background-color: #F7F9FF;
+  margin-top: 5vh; /* Adjusted for better positioning */
+  margin-right: 20vw; /* Adjusted for better responsiveness */
+  position: relative;
+  z-index: 1;
+}
+
+
+.curved-rectangle1 {
+  width: 200px;
+  height: 200px;
+  background-color: #F7F9FF;
+  border: 1px solid #FF5C00;
+  margin-left: -25vw; /* Adjusted for better responsiveness */
+  border-bottom-right-radius: 15vh; /* create a curved top-left corner */
+}
+
+.curved-circle1
+{
+  position: relative;
+  background-color: none;
+  border-radius: 50vh;
+  background-size: cover; /* Scale the background image to cover the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  left: 20vh;
+  transform: translate(15%,0);
+  background-image: url(/About_Page_Images/Im_2.png);
+  background-size: 100%;
+}
+
+.curved-rectangle2 {
+  width: 240px;
+  height: 200px;
+  background-color: #F7F9FF;
+  margin-left: 15vw; /* Adjusted for better responsiveness */
+  border-bottom-left-radius: 15vh; /* create a curved top-left corner */
+  background-image: url(/About_Page_Images/Im_3.png);
+  background-size: 100%;
+}
+
+curved-circlesmall {
+  width: 200vw;
+  height: 200vh;
+  margin-top: 100vh;
+  background-color: black;
+  border: 2px solid #FF5C00;
+  margin-left: -10vw; /* Adjusted for better responsiveness */
+}
+
+.curved-rectangle3 {
+  width: 200px;
+  height: 200px;
+  background-color: #F7F9FF;
+  border: 2px dashed #FF5C00;
+  margin-left: -25vw; /* Adjusted for better responsiveness */
+  border-bottom-left-radius: 15vh; /* create a curved top-left corner */
+}
+.curved-rectangle4 {
+  width: 200px;
+  height: 200px;
+  background-color: #F7F9FF;
+  margin-left: 12vw; /* Adjusted for better responsiveness */
+  border-top-right-radius: 15vh; /* create a curved top-left corner */
+  transform: translate(15%,0);
+  background-image: url(/About_Page_Images/Im_4.png);
+  background-size: 100%;
+}
+
+/* Box at the Right column */
+.about-right-column .right-box-1
+{
+  margin-left: 14vw;
+  width: 15vw; /* Changed to vw for better responsiveness */
+  height: 20vh; /* Adjusted for better responsiveness */
+  background-color: #D9D9D9;
+  border-radius: 6vh;
+  background-image: url(/About_Page_Images/Im_5.png);
+  background-size: 100%;
+}
+
+.about-right-column .right-box-2
+{
+  margin-left: -25vw; /* Adjusted for better responsiveness */
+  width: 30vw; /* Changed to vw for better responsiveness */
+  height: 25vh; /* Adjusted for better responsiveness */
+  background-color: #D9D9D9;
+  border-top-left-radius: 15vh; /* create a curved top-left corner */
+  background-image: url(/About_Page_Images/Im_6.png);
+  background-size: 100%;
+}
+
+.half-circle2 {
+  width: 14vw;
+  height: 25vh;
+  border: 2px solid #FF5C00; /* set the border color and width */
+  border-radius: 50%; /* set the border radius */
+  background-color: #F7F9FF;
+  position: relative;
+  margin-left: 32vw;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.half-circle2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background-color: #070055;
+}
+
+/* OUR MISSION */
+
+.oval-container {
+  position: relative;
+  left: 10vw;
+  width: 8vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.oval {
+  position: relative;
+  width: 11.5vw;
+  height: 45vh;
+  border-radius: 10vh 10vh 10vh 10vh;
+  background-color: #7C7C7C;
+  margin: 0 0.1vh;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+.oval-container-item:nth-child(2) .oval,
+.oval-container-item:nth-child(4) .oval,
+.oval-container-item:nth-child(6) .oval 
+{
+  transform: translateY(10vh);
+  background-color: #444444;
+}
+
+
+.imageoval {
+  position: absolute; /* Position the image absolutely within the image container */
+  width: 14vw; /* Adjust the width of the image to fit within the oval */
+  height: 28vh; /* Adjust the height of the image to fit within the oval */
+  top: 29vh; /* Adjust the top property to a value that is slightly lower */
+  left: 5.8vw;
+  transform: translate(-50%, -50%) scale(1.0); /* Adjust the transform property */
+  z-index: 1; /* Bring the image to the front */
+  border-radius: 10vh 10vh 50vh 50vh; /* Adjust the border-radius value to create a more gradual curve */
+  overflow: visible; /* Set the overflow property to visible */
+  clip: polygon(50% 0%, 0% 100%, 100% 100%); /* Set the clipping region to the oval shape */
+}
+
+/* PART-1 */
+
+/* Are You Ready To Start Learning - LEFT COLUMN*/
+.mission_container {
+  margin-left: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 22vh;
+  margin-bottom: 12vh;
+}
+
+.mission_heading_container {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 6vh;
+  margin-left: 6vh;
+}
+
+.mission_main_heading {
+  font-size: 3vh;
+  color: #070055;
+  margin-bottom: 2vh;
+}
+
+.mission-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mission-left-column {
+  flex: 1;
+  padding: 2vh;
+  margin-left: 6vh;
+}
+
+.mission-box-1 {
+  margin-top: -2vh;
+  width: 60vh;
+  height: 26vh;
+  margin-left: 14vh;
+  border-radius: 2vh;
+  background-image: url(/About_Page_Images/Im_14.png);
+  background-size: 100%;
+}
+
+.mission-dotted-box-1 {
+  position: absolute;
+  background-color: transparent;
+  border: 1vh dotted #CFDBFF;
+  /* Adjust the dotted line properties */
+  border-radius: 2vh;
+  overflow: hidden;
+  /* Hide overflowing content */
+  top: 252vh;
+  /* Adjust as needed */
+  left: 16vh;
+  /* Adjust as needed */
+  width: 40vh;
+  /* Changed to vh for better responsiveness */
+  height: 30vh;
+  /* Changed to vh for better responsiveness */
+  z-index: -1;
+  /* Ensure it's behind other elements */
+}
+
+/* Are You Ready To Start Learning - RIGHT COLUMN*/
+
+.mission-right-column {
+  width: 70vh;
+  /* Changed to vh for better responsiveness */
+  height: 24vh;
+  /* Changed to vh for better responsiveness */
+  background-color: white;
+  margin-right: 6vh;
+  /* Changed to vh for better responsiveness */
+  margin-top: 8vh;
+  /* Changed to vh for better responsiveness */
+  position: relative;
+  z-index: 1;
+}
+
+.mission-right-column p {
+  font-size: 2.2vh;
+  text-align: justify;
+  line-height: 4vh;
+  color: #696969;
+  margin-top: -2vh;
+  margin-left: -4vh;
+  margin-bottom: 2vh;
+}
+
+/* PART-2 */
+
+/* LEFT-COLUMN */
+
+.mission-part2-left-column {
+  flex: 1;
+  padding: 2vh;
+  margin-left: 2vh;
+}
+
+.mission-part2-left-column p {
+  font-size: 2.2vh;
+  text-align: justify;
+  line-height: 4vh;
+  color: #696969;
+  margin-left: -41vh;
+  margin-top: -2vh;
+  margin-bottom: 2vh;
+}
+
+/* RIGHT-COLUMN */
+
+.mission-part2-right-column {
+  width: 50vh;
+  /* Changed to vh for better responsiveness */
+  height: 24vh;
+  /* Changed to vh for better responsiveness */
+  background-color: white;
+  margin-left: 20vh;
+  margin-right: 12vh;
+  /* Changed to vh for better responsiveness */
+  margin-top: 8vh;
+  /* Changed to vh for better responsiveness */
+  position: relative;
+  z-index: 1;
+}
+
+.mission-part2-box-1 {
+  margin-top: -36vh;
+  width: 42vh;
+  height: 20vh;
+  margin-left: 16vh;
+  border-radius: 2vh;
+  background-image: url(/About_Page_Images/Im_15.png);
+  background-size: 100%;
+}
+
+.mission-part2-box-2 {
+  margin-top: -6vh;
+  width: 30vh;
+  height: 24vh;
+  margin-left: 62vh;
+  border-radius: 2vh;
+  background-image: url(/About_Page_Images/Im_16.png);
+  background-size: 110%;
+}
+
+.mission-part2-dotted-box-1 {
+  position: absolute;
+  background-color: transparent;
+  border: 0.5vh dotted #CFDBFF;
+  /* Adjust the dotted line properties */
+  border-radius: 2vh;
+  overflow: hidden;
+  /* Hide overflowing content */
+  top: 8vh;
+  /* Adjust as needed */
+  left: 42vh;
+  /* Adjust as needed */
+  width: 36vh;
+  /* Changed to vh for better responsiveness */
+  height: 20vh;
+  /* Changed to vh for better responsiveness */
+  z-index: -1;
+  /* Ensure it's behind other elements */
+}
+
+/* PART-3 */
+.mission-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 24vh;
+  margin-left: 6vh;
+  margin-bottom: 40vh;
+}
+
+.mission-learning-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mission-learning-left-column {
+  flex: 1;
+  padding: 2vh;
+  margin-left: 6vh;
+}
+
+.mission-learning-left-column h2 {
+  font-size: 4vh;
+  color: #070055;
+  text-align: justify;
+  margin-bottom: 1vh;
+  letter-spacing: 0.2vh;
+  word-spacing: 0.8vh;
+}
+
+.mission-learning-left-column p {
+  font-size: 2.4vh;
+  text-align: justify;
+  color: #696969;
+  line-height: 4vh;
+  margin-left: 0vh;
+  margin-bottom: 2vh;
+}
+
+/* PART-4 */
+.mission-learning-right-column {
+  width: 140vh;
+  /* Changed to vh for better responsiveness */
+  height: 24vh;
+  /* Changed to vh for better responsiveness */
+  background-color: white;
+  margin-right: 10vh;
+  /* Changed to vh for better responsiveness */
+  margin-top: 40vh;
+  /* Changed to vh for better responsiveness */
+  position: relative;
+  z-index: 1;
+}
+
+.mission-learning-right-column h2 {
+  font-size: 4.4vh;
+  color: #070055;
+  margin-bottom: 1vh;
+  letter-spacing: 0.2vh;
+  word-spacing: 0.8vh;
+}
+
+.mission-learning-right-column p {
+  font-size: 2vh;
+  text-align: justify;
+  color: #696969;
+  margin-right: 6vh;
+  line-height: 4vh;
+  margin-bottom: 20vh;
+}
+
+
+
+/* FOOTER */
+.footer {
+  background-color: #DEE3F8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Required for positioning the pseudo-element */
+  flex-direction: column; /* Arrange contents vertically */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Ensures the pseudo-element is behind the content */
+  margin-bottom: 8vh;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer h3 {
+  margin-top: 1vh; /* Remove the large top margin */
+}
+
+.footer p {
+  margin: 5px 0; /* Add margin for the paragraphs to create some space */
+}
+
+.contact-us-column {
+  margin-left: 20vw; /* Move "Contact Us" section to the left */
+}
+
+/* Pseudo-element for the blue strip */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 17vh; /* Position in the middle */
+  left: 0;
+  width: 180vh;
+  height: 1.6vh; /* Adjust the height as needed */
+  background-color: #070055; /* Blue color */
+  transform: translateY(-50%); /* Adjust to perfectly center */
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  /* Adjust styles for screens up to 1200px wide */
+
+  .about_text {
+    font-size: 5vw;
+  }
+
+  .about_box-container {
+    height: auto;
+    padding: 3vh;
+  }
+
+  .about-left-column h2 {
+    font-size: 5vw;
+  }
+
+  .about-left-column p {
+    font-size: 2.5vw;
+  }
+
+  .about-right-column {
+    width: 50vw;
+    margin-right: 3vw;
+  }
+
+  .mission_main_heading {
+    font-size: 4vw;
+  }
+
+  .mission-right-column p {
+    font-size: 2.5vw;
+  }
+
+  .mission-part2-left-column p {
+    font-size: 2.5vw;
+    margin-left: -15vw;
+  }
+
+  .mission-part2-right-column {
+    width: 60vw;
+    margin-left: 15vw;
+    margin-right: 8vw;
+  }
+
+  .mission-learning-left-column h2 {
+    font-size: 5vw;
+  }
+
+  .mission-learning-left-column p {
+    font-size: 3vw;
+  }
+
+  .mission-learning-right-column h2 {
+    font-size: 5.5vw;
+  }
+
+  .mission-learning-right-column p {
+    font-size: 2.5vw;
+  }
+
+
+
+
+
+  /*TUTOR*/
+   /* Background Wrapper */
+   .background_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* Tutor Container */
+  .tutor_container {
+    width: 90%; /* Adjust width to fit smaller screen */
+    margin: 4vh auto;
+    margin-top: 4vh;
+    margin-left: -2vh;
+    margin-bottom: 4vh;
+    padding: 1.6vh;
+  }
+
+  /* Tutor Box */
+  .tutor_box {
+    flex: 1;
+    padding: 2vh;
+  }
+
+  /* Tutor Title */
+  .tutor_title {
+    margin-top: 3vh;
+    font-size: 2.4vh;
+    margin-left: 8vh;
+    margin-bottom: 1vh;
+  }
+
+  /* Tutor Subtitle */
+  .tutor_subtitle {
+    margin-top: 1vh;
+    font-size: 4vh;
+    margin-left: 8vh;
+    text-align: left;
+    margin-bottom: 2vh;
+  }
+
+  /* Tutor Actions */
+  .tutor_actions {
+    display: flex;
+    justify-content: center;
+    margin-left: -12vh;
+    gap: 1vh;
+  }
+
+  /* Tutor Buttons */
+  .tutor_btn-1, .tutor_btn-2 {
+    width: 16vh;
+    height: 4.2vh;
+    font-size: 1.4vh;
+    padding: 1.2vh 2.2vh;
+  }
+
+  /* Genuine Customers - LEFT COLUMN*/
+  .genuine_box-container {
+    width: 80%; /* Adjust width to fit smaller screen */
+    margin-left: 10vh;
+    margin-right: 0.4vh;
+    padding: 2vh;
+  }
+
+  /* Genuine Customers - RIGHT COLUMN*/
+  .genuine-right-column {
+    width: 30vh; /* Adjust width to fit smaller screen */
+    margin-right: 4vh;
+    margin-top: 4vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Image */
+  .genuine_outer-box {
+    width: 28vh;
+    height: 24vh;
+    padding: 1.6vh;
+  }
+
+  .genuine_inner-box {
+    width: 12vh;
+    height: 12vh;
+  }
+
+  .genuine_image-overlay {
+    width: 30%;
+    height: auto;
+    transform: translateX(-0.4vh) translateY(2.3vh);
+  }
+
+  /* Tutor Card Section */
+  .tutor_card-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+  }
+
+  .tutor_card-section_margin {
+    width: 40vh; /* Adjust width to fit smaller screen */
+    margin: 2vh auto;
+    margin-top: 4vh;
+    margin-left: -2vh;
+    margin-right: -2vh;
+    padding: 1.6vh;
+  }
+
+  .tutor_card-icon {
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: 0.4vh;
+    width: 2.2vh;
+    height: 2.4vh;
+  }
+
+  .tutor_card-heading {
+    font-size: 1.8vh;
+    margin-left: 0.4vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .tutor_card-subheading {
+    font-size: 1.2vh;
+    margin-left: 0.4vh;
+    margin-top: 0.5vh;
+  }
+
+  /* Button */
+  .tutor_button-container {
+    text-align: center;
+  }
+
+  .tutor_install-button {
+    width: 16vh;
+    height: 4.2vh;
+    font-size: 1.4vh;
+    padding: 1.2vh 2.2vh;
+  }
+
+  /* Testimonials Tutor*/
+  .tutor_container_2 {
+    width: 90%; /* Adjust width to fit smaller screen */
+    margin: 4vh auto;
+    margin-top: 4vh;
+    margin-left: -2vh;
+    margin-bottom: 4vh;
+    padding: 1.6vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide */
+
+  .about_text {
+    font-size: 6vw;
+  }
+
+  .about_box-container {
+    height: auto;
+    padding: 4vh;
+  }
+
+  .about-left-column h2 {
+    font-size: 6vw;
+  }
+
+  .about-left-column p {
+    font-size: 3vw;
+  }
+
+  .about-right-column {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 4vh;
+  }
+
+  .mission_main_heading {
+    font-size: 5vw;
+  }
+
+  .mission-right-column p {
+    font-size: 3vw;
+  }
+
+  .mission-part2-left-column p {
+    font-size: 3vw;
+    margin-left: -10vw;
+  }
+
+  .mission-part2-right-column {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mission-learning-left-column h2 {
+    font-size: 6vw;
+  }
+
+  .mission-learning-left-column p {
+    font-size: 3.5vw;
+  }
+
+  .mission-learning-right-column h2 {
+    font-size: 6vw;
+  }
+
+  .mission-learning-right-column p {
+    font-size: 3vw;
+  }
+
+
+  /*TUTOR*/
+  /* Tutor Page Want to become a Tutor */
+  .tutor_container 
+  {
+    width: 80vw; /* Adjust width to fit 768px screen */
+    height: 30vh; /* Adjust height to fit 768px screen */
+    margin: 2vh auto;
+  }
+
+  .tutor_box {
+    flex: 1;
+    padding: 1.5vh;
+  }
+
+  .tutor_title {
+    font-size: 2.5vh;
+    margin-top: 3vh;
+    margin-left: 6vh;
+    margin-bottom: 1vh;
+  }
+
+  .tutor_subtitle {
+    font-size: 4vh;
+    margin-top: 1vh;
+    margin-left: 6vh;
+    text-align: left;
+    margin-bottom: 2vh;
+  }
+
+  .tutor_actions {
+    display: flex;
+    justify-content: center;
+    margin-left: -6vh;
+    gap: 1vh;
+  }
+
+  .tutor_btn-1, .tutor_btn-2 {
+    width: 14vh;
+    height: 4vh;
+    font-size: 1.5vh;
+    padding: 1.2vh 2vh;
+  }
+
+  /* Genuine Customers - LEFT COLUMN*/
+  .genuine_box-container {
+    width: 80vw;
+    height: 40vh;
+    margin-left: 6vh;
+    margin-right: 0.4vh;
+    padding: 2vh;
+  }
+
+  .genuine-left-column {
+    flex: 1;
+    padding: 2vh;
+    margin-left: 4vh;
+  }
+
+  .genuine-left-column h2 {
+    font-size: 3vh;
+    margin-top: -1vh;
+    margin-left: 4.5vh;
+  }
+
+  .genuine-left-column p {
+    font-size: 1.2vh;
+    margin-bottom: 2vh;
+    margin-left: 4.5vh;
+  }
+
+  .genuine-left-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .genuine-left-column li {
+    font-size: 1.8vh;
+    margin-left: 8vh;
+    margin-bottom: 2.5vh;
+  }
+
+  /* Genuine Customers - RIGHT COLUMN*/
+  .genuine-right-column {
+    width: 30vh;
+    height: 20vh;
+    margin-right: 4vh;
+    margin-top: 4vh;
+  }
+
+  /* Image */
+  .genuine_outer-box {
+    border: 0.2vh dotted #DEE3F8;
+    padding: 1.5vh;
+    width: 24vh;
+    height: 20vh;
+    border-radius: 6vh;
+  }
+
+  .genuine_inner-box {
+    width: 10vh;
+    height: 10vh;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  /* Tutor Card*/
+  .tutor_heading_container {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+  }
+
+  .tutor_main_heading {
+    font-size: 2.5vh;
+    margin-bottom: 1.5vh;
+  }
+
+  .tutor_subline {
+    font-size: 1.5vh;
+    margin-bottom: -6vh;
+  }
+
+  /* CARD: Advance Searching */
+  .tutor_logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: -0.8vh;
+  }
+
+  .tutor_card-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+  }
+
+  .tutor_card-section_margin {
+    margin: 2vh auto;
+    margin-top: 4vh;
+    margin-left: -2vh;
+    margin-right: -1vh;
+    width: 36vh;
+    height: 10vh;
+    box-shadow: 0 0.2vh 0.4vh 0 rgba(0, 0, 0, 0.1);
+    padding: 1.2vh;
+    text-align: left;
+    background-color: white;
+    border-radius: 1.2vh;
+  }
+
+  .tutor_card-icon {
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: 0.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F2691;
+    border-radius: 20%;
+    width: 2vh;
+    height: 2.4vh;
+    color: white;
+    font-size: 2vh;
+    margin-right: 0.5vh;
+  }
+
+  .tutor_card-heading {
+    font-weight: bold;
+    margin-left: 0.2vh;
+    color: #070055;
+    margin-bottom: 0.2vh;
+  }
+
+  .tutor_card-subheading {
+    font-size: 1.2vh;
+    margin-left: 0.2vh;
+    color: #666;
+    margin-top: 0.2vh;
+  }
+
+  /* BUTTON */
+  .tutor_button-container {
+    text-align: center;
+  }
+
+  .tutor_install-button {
+    background-color: #FF5C00;
+    color: #FFFFFF;
+    border: none;
+    padding: 1.2vh 2vh;
+    border-radius: 1.2vh;
+    font-size: 1.5vh;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 0.2vh 0.4vh rgba(0, 0, 0, 0.1);
+    width: 12vh;
+    height: 3.5vh;
+    margin-bottom: -1vh;
+  }
+
+  .tutor_install-button:hover {
+    transform: translateY(-0.2vh);
+    box-shadow: 0px 0.4vh 0.6vh rgba(0, 0, 0, 0.2);
+  }
+
+  /* Testimonials Tutor*/
+  .tutor_container_2 {
+    background-color: white;
+    margin: 2vh auto;
+    margin-top: 4vh;
+    margin-left: -1vh;
+    margin-bottom: 2vh;
+    width: 80vw;
+    height: 30vh;
+    padding: 1.2vh;
+    display: flex;
+    border-radius: 1vh;
+  }  
+
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for screens up to 480px wide */
+
+  .about_text {
+    font-size: 8vw;
+  }
+
+  .about-left-column h2 {
+    font-size: 8vw;
+  }
+
+  .about-left-column p {
+    font-size: 4vw;
+  }
+
+  .mission_main_heading {
+    font-size: 7vw;
+  }
+
+  .mission-right-column p {
+    font-size: 4vw;
+  }
+
+  .mission-part2-left-column p {
+    font-size: 4vw;
+    margin-left: -5vw;
+  }
+
+  .mission-learning-left-column h2 {
+    font-size: 8vw;
+  }
+
+  .mission-learning-left-column p {
+    font-size: 4.5vw;
+  }
+
+  .mission-learning-right-column h2 {
+    font-size: 8vw;
+  }
+
+  .mission-learning-right-column p {
+    font-size: 4vw;
+  }
+}
+
+
